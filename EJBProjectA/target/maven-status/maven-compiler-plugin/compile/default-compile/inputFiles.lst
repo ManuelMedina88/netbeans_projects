@@ -1,0 +1,10 @@
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/resources/JavaEE8Resource.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/dao/StateDao.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/JAXRSConfiguration.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/beans/Demonstration.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/service/IStateService.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/entities/UsStates.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/singleton/SingletonSessionBean.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/service/StateService.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/singleton/SingletonSessionBeanRemote.java
+/home/manuel/NetBeansProjects/EJBProjectA/src/main/java/com/itdepartment/newtech/dao/IStateDao.java

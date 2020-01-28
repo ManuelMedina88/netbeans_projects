@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2019, 10:45:24 AM
+    Author     : manuel
+*/
+
+body {
+    
+    background-color:rgb(242, 242, 242);
+}
+
+li {
+    
+    list-style-type: none;
+}
+
+span {
+    color: red;
+    font-weight: bolder;
+}
+
+div.containerint {
+    margin-top: 5em;
+    width:50%;
+    padding:40px;
+    margin-left: 25%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+fieldset {
+    margin-top: 3em;
+}
+
+.space {
+    margin-top: 3em;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+ 

@@ -1,0 +1,10 @@
+com/itdepartment/newtech/service/IStateService.class
+com/itdepartment/newtech/resources/JavaEE8Resource.class
+com/itdepartment/newtech/service/StateService.class
+com/itdepartment/newtech/singleton/SingletonSessionBeanRemote.class
+com/itdepartment/newtech/singleton/SingletonSessionBean.class
+com/itdepartment/newtech/dao/IStateDao.class
+com/itdepartment/newtech/entities/UsStates.class
+com/itdepartment/newtech/beans/Demonstration.class
+com/itdepartment/newtech/JAXRSConfiguration.class
+com/itdepartment/newtech/dao/StateDao.class

@@ -1,0 +1,12 @@
+com/itdepartment/newtech/domain/Users.class
+com/itdepartment/newtech/dao/UserDaoImpl.class
+com/itdepartment/newtech/domain/TestUserCalification.class
+com/itdepartment/newtech/service/IGeneralService.class
+com/itdepartment/newtech/service/GeneralServiceImpl.class
+com/itdepartment/newtech/beans/GeneralService.class
+com/itdepartment/newtech/domain/Users_.class
+com/itdepartment/newtech/domain/ExamAnswerds_.class
+com/itdepartment/newtech/dao/IUserDao.class
+com/itdepartment/newtech/domain/ExamAnswerds.class
+com/itdepartment/newtech/domain/TestUserCalification_.class
+com/itdepartment/newtech/beans/UserVerification.class

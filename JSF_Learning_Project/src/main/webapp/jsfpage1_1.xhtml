@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>EL operators</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    </h:head>
+    <h:body>
+        <h1 class="ml-5">EL operators</h1>
+        <br/>
+        <div class="card ml-5 border-dark" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Addition (+)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} + #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 + jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Subtraction (-)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} - #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 - jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Multiplication (*)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} * #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 * jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Division (div,/)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} div #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 div jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Modulo (mod, %)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} mod #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 mod jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:21rem;">
+            <h3 class="card-header text-white bg-dark ">Logical AND (and, &amp;&amp;)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.bool1} and #{jsfBean1_1.bool2} = #{jsfBean1_1.bool1 and jsfBean1_1.bool2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark ">Logical OR (or, ||)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.bool1} || #{jsfBean1_1.bool2} = #{jsfBean1_1.bool1 or jsfBean1_1.bool2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:22rem;">
+            <h3 class="card-header text-white bg-dark ">Logical opposite (not, !)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">!#{jsfBean1_1.bool1} = #{!jsfBean1_1.bool1}<br/>
+                not #{jsfBean1_1.bool2} = #{not jsfBean1_1.bool2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:24rem;">
+            <h3 class="card-header text-white bg-dark ">Relational less than (lt, &lt;)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} &lt; #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 lt jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:26rem;">
+            <h3 class="card-header text-white bg-dark ">Relational greater than (gt, &gt;)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} &gt; #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 > jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:34rem;">
+            <h3 class="card-header text-white bg-dark ">Relational less than or equal to (le, &lt;=)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} &lt;= #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 le jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:36rem;">
+            <h3 class="card-header text-white bg-dark ">Relational greater than or equal to (ge, &gt;=)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} &gt;= #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 ge jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark "> Equal to (eq, ==)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} == #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 eq jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        
+        <div class="card ml-5 border-dark mt-5" style="width:20rem;">
+            <h3 class="card-header text-white bg-dark "> Not equal to (ne, !=)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1} != #{jsfBean1_1.integer2} = #{jsfBean1_1.integer1 ne jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark "> Assignment (=)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer3} = #{jsfBean1_1.integer1} + #{jsfBean1_1.integer2}  #{jsfBean1_1.integer3 = jsfBean1_1.integer1 + jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:18rem;">
+            <h3 class="card-header text-white bg-dark "> Semicolon (;)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.integer1 = jsfBean1_1.integer1 + jsfBean1_1.integer2; jsfBean1_1.integer2 = jsfBean1_1.integer1 * jsfBean1_1.integer2}; #{jsfBean1_1.integer1} y #{jsfBean1_1.integer2}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:24rem;">
+            <h3 class="card-header text-white bg-dark "> empty </h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">empty jsfBean1_1.integer3 = #{empty jsfBean1_1.integer3} </p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:24rem;">
+            <h3 class="card-header text-white bg-dark "> Unary operator (-(number)) </h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">-(number) = ${jsfBean1_1.integer1} = #{-jsfBean1_1.integer1}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5 mb-4" style="width:24rem;">
+            <h3 class="card-header text-white bg-dark "> A ? B : C, Ternary operator </h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">(#{jsfBean1_1.integer1} &lt; #{jsfBean1_1.integer2}) ? #{jsfBean1_1.firstName} : #{jsfBean1_1.lastName} = #{(jsfBean1_1.integer1 lt jsfBean1_1.integer2)? jsfBean1_1.firstName : jsfBean1_1.lastName}</p>
+            </div>
+        </div>
+         
+        <div class="card ml-5 border-dark mt-5" style="width:23rem;">
+            <h3 class="card-header text-white bg-dark "> String concatenation (+=)</h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold"> #{jsfBean1_1.firstName} += #{jsfBean1_1.lastName} = #{jsfBean1_1.firstName += " " += jsfBean1_1.lastName} </p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:23rem;">
+            <h3 class="card-header text-white bg-dark "> Used when writing EL expressions (.) </h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.expressionLanguage2} = #{jsfBean1_1.firstName}</p>
+            </div>
+        </div>
+        
+        <div class="card ml-5 border-dark mt-5" style="width:23rem;">
+            <h3 class="card-header text-white bg-dark "> Used when writing EL expressions ([]) </h3>
+            <div class="card-body">
+                
+                <p class="text-monospace font-weight-bold">#{jsfBean1_1.expressionLanguage2} = #{jsfBean1_1['lastName']}</p>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </h:body>
+</html>
+
+
+

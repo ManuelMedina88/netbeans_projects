@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head jsf:id="head">
+        <title>JSF Page with HTML5 Markup</title>
+        <link jsf:library="css" jsf:name="styles.css" rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body jsf:id="body">
+        <form jsf:prependId="false">
+            <h:messages></h:messages>
+            <table style="border-spacing: 0; border-collapse: collapse">
+                <tr>
+                    <td class="rightAlign">
+                        <label jsf:for="firstName">First Name</label>
+                    </td>
+                    <td class="leftAlign">
+                        <input type="text" jsf:id="firstName" jsf:label="First Name" jsf:value="#{customer.firstName}" jsf:validator="#{alphaValidator.validateAlpha}">
+                            <f:validateLength minimum="2" maximum="30"></f:validateLength>
+                        </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightAlign">
+                        <label jsf:for="lastName">Last Name</label>
+                    </td>
+                    <td class="leftAlign">
+                        <input type="text" jsf:id="lastName"  jsf:label="Last Name" jsf:value="#{customer.lastName}" jsf:required="true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightAlign">
+                        <label jsf:for="email">Email Address</label>
+                    </td>
+                    <td class="leftAlign">
+                        <input type="email" jsf:id="email" jsf:label="Email Address" jsf:value="#{customer.email}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" jsf:action="confirmation" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

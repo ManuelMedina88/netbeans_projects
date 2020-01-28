@@ -1,0 +1,9 @@
+com/itdepartment/newtech/service/SchoolServiceImpl.class
+com/itdepartment/newtech/beans/SchoolInfo.class
+com/itdepartment/newtech/domain/Students_.class
+com/itdepartment/newtech/dao/SchoolDaoImpl.class
+com/itdepartment/newtech/domain/Students.class
+com/itdepartment/newtech/domain/Majors.class
+com/itdepartment/newtech/service/ISchoolService.class
+com/itdepartment/newtech/domain/Majors_.class
+com/itdepartment/newtech/dao/ISchoolDao.class

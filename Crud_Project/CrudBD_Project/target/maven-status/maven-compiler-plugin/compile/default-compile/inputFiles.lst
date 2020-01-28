@@ -1,0 +1,6 @@
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/service/IContactService.java
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/beans/ContactBean.java
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/domain/Contact.java
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/service/ContactServiceImpl.java
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/dao/IContactDao.java
+/home/manuel/NetBeansProjects/Crud_Project/CrudBD_Project/src/main/java/com/itdepartment/newtech/dao/ContactDaoImpl.java

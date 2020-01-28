@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"          
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <h:head>
+        <title>The conditional text in JSF</title>
+        <h:outputStylesheet name="css/style1.css"/>
+    </h:head>
+    <h:body>
+        <h1>The conditional text in JSF</h1>
+
+        <h:outputText styleClass="#{playersBean.play == 'LEFT' ? 'blue':'red'}" 
+                      value="#{playersBean.play}"/>
+        <br/>
+        <h:outputText styleClass="red" value="Facebook address: #{playersBean.facebook}"
+                      rendered="#{!empty playersBean.facebook}"/>
+        <br/>
+
+        <h:form id="prizeFormId">
+            <h:commandButton value="Show Career Prize Money">
+                <f:ajax render="rnprizeid"
+                        listener="#{playersBean.showPrizeMoney()}"/>
+            </h:commandButton>
+            <h:panelGrid id="rnprizeid">
+                <h:outputText value="#{playersBean.prize}"
+                              rendered="#{playersBean.show_prize}">
+                    <f:convertNumber type="currency" currencySymbol="RD$"/>
+                </h:outputText>
+            </h:panelGrid>
+            <h:commandButton value="Hide Career Prize Money">
+                <f:ajax render="rnprizeid"
+                        listener="#{playersBean.hidePrizeMoney()}"/>
+            </h:commandButton>
+        </h:form>
+        <br/>
+        <h:form >
+            <h:selectBooleanCheckbox a:label="Show Image"                                     
+                                     valueChangeListener="#{playersBean.showHideRacquetPicture}">
+                <f:ajax render="racquetId"/>
+            </h:selectBooleanCheckbox>
+            <br/>
+            <h:panelGroup id="racquetId">
+                <ui:fragment rendered="#{playersBean.show_racquet}">
+                    <img src="#{resource['images:babolat.png']}" width="50%" height="50%"/>
+                </ui:fragment>
+            </h:panelGroup>
+        </h:form>
+
+
+    </h:body>
+</html>

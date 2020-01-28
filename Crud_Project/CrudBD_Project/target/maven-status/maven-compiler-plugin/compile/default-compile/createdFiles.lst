@@ -1,0 +1,7 @@
+com/itdepartment/newtech/service/IContactService.class
+com/itdepartment/newtech/domain/Contact_.class
+com/itdepartment/newtech/dao/ContactDaoImpl.class
+com/itdepartment/newtech/service/ContactServiceImpl.class
+com/itdepartment/newtech/domain/Contact.class
+com/itdepartment/newtech/beans/ContactBean.class
+com/itdepartment/newtech/dao/IContactDao.class

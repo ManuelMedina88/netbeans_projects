@@ -1,0 +1,16 @@
+com/itdepartment/newtech/domain/Products_.class
+com/itdepartment/newtech/service/IProductService.class
+com/itdepartment/newtech/domain/Users.class
+com/itdepartment/newtech/service/IUserService.class
+com/itdepartment/newtech/dao/UserDaoImpl.class
+com/itdepartment/newtech/helper/BeanHelper.class
+com/itdepartment/newtech/service/UserServiceImpl.class
+com/itdepartment/newtech/service/ProductServiceImpl.class
+com/itdepartment/newtech/dao/ProductDaoImpl.class
+com/itdepartment/newtech/dao/IProductDao.class
+com/itdepartment/newtech/domain/Users_.class
+com/itdepartment/newtech/beans/SellBeans.class
+com/itdepartment/newtech/dao/IUserDao.class
+com/itdepartment/newtech/beans/ProductBeans.class
+com/itdepartment/newtech/beans/UsernameCredentialBeans.class
+com/itdepartment/newtech/domain/Products.class

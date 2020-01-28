@@ -1,0 +1,6 @@
+com/itdepartment/newtech/ejbproject_2/JAXRSConfiguration.class
+com/itdepartment/newtech/ejbproject_2/beansCDI/TestingBeans.class
+com/itdepartment/newtech/ejbproject_2/beansCDI/BeanHelper.class
+com/itdepartment/newtech/ejbproject_2/resources/JavaEE8Resource.class
+com/itdepartment/newtech/ejbproject_2/service/SimpleSessionBeanStateless.class
+com/itdepartment/newtech/ejbproject_2/service/ISimpleSessionBoth.class

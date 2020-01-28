@@ -1,0 +1,9 @@
+com/itdepartment/newtech/primefacesproject/entities/UsStates.class
+com/itdepartment/newtech/primefacesproject/dao/IStatesDao.class
+com/itdepartment/newtech/primefacesproject/resources/JavaEE8Resource.class
+com/itdepartment/newtech/primefacesproject/beans/PrimefacesData.class
+com/itdepartment/newtech/primefacesproject/service/StatesServiceImpl.class
+com/itdepartment/newtech/primefacesproject/beans/ConverterHelper.class
+com/itdepartment/newtech/primefacesproject/dao/StatesDaoImpl.class
+com/itdepartment/newtech/primefacesproject/service/IStatesService.class
+com/itdepartment/newtech/primefacesproject/JAXRSConfiguration.class

@@ -1,0 +1,7 @@
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/domain/Students.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/service/SchoolServiceImpl.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/service/ISchoolService.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/beans/SchoolInfo.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/dao/SchoolDaoImpl.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/dao/ISchoolDao.java
+/home/manuel/NetBeansProjects/SchoolDatabase/src/main/java/com/itdepartment/newtech/domain/Majors.java

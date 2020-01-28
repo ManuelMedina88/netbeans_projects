@@ -1,0 +1,8 @@
+com/itdepartment/newtech/services/ISingletonSessionBean.class
+com/itdepartment/newtech/bean/TestingSingletonBean.class
+com/itdepartment/newtech/resources/JavaEE8Resource.class
+com/itdepartment/newtech/services/ILetsTry.class
+com/itdepartment/newtech/services/LetsTry.class
+com/itdepartment/newtech/services/SingletonSessionBean.class
+com/itdepartment/newtech/entities/UsStates.class
+com/itdepartment/newtech/JAXRSConfiguration.class

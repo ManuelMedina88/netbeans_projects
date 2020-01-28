@@ -1,0 +1,14 @@
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/dao/ProductDaoImpl.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/service/ProductServiceImpl.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/domain/Products.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/service/UserServiceImpl.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/beans/UsernameCredentialBeans.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/dao/UserDaoImpl.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/service/IUserService.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/helper/BeanHelper.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/beans/ProductBeans.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/service/IProductService.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/dao/IProductDao.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/dao/IUserDao.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/domain/Users.java
+/home/manuel/NetBeansProjects/ColmaHelp/src/main/java/com/itdepartment/newtech/beans/SellBeans.java

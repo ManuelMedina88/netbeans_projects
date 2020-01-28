@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>English Learning</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <h:outputStylesheet name="css/test_styles.css"/>
+    </h:head>
+    <h:body class="text-center" style="background-color:#{test1Bean.color}">
+        
+        <div class="container containerint">
+                       
+            <h:form  class="form" a:autocomplete="off" style="text-align: left">
+                <h1>Verb to be Test(1)</h1>
+                <fieldset>
+                    <legend>Complete the spaces with is, are, or am.</legend>
+                    <ul>
+                        <li><label><span class="letter">a</span>
+                                Cars <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:placeholder="are" a:required="true" value="#{test1Bean.answerd1}" id="a"/> expensive. <span class="error" style="display:#{test1Bean.show.get(0)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">b</span>
+                                John <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd2}" id="b"/> a student. <span class="error" style="display:#{test1Bean.show.get(1)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">c</span>
+                                I <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd3}" id="c"/> the best in the class. <span class="error" style="display:#{test1Bean.show.get(2)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">d</span>
+                                My sister <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd4}" id="d"/> a teacher. <span class="error" style="display:#{test1Bean.show.get(3)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">e</span>
+                                The train <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd5}" id="e"/> late again. <span class="error" style="display:#{test1Bean.show.get(4)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">f</span>
+                                You <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd6}" id="f"/> in class 3B. <span class="error" style="display:#{test1Bean.show.get(5)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">g</span>
+                                That computer <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd7}" id="g"/> very slow. <span class="error" style="display:#{test1Bean.show.get(6)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">h</span>
+                                It <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd8}" id="h"/> cold today. <span class="error" style="display:#{test1Bean.show.get(7)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">i</span>
+                                We <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd9}" id="i"/> interested in shopping. <span class="error" style="display:#{test1Bean.show.get(8)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">j</span>
+                                I <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd10}" id="j"/> tired. <span class="error" style="display:#{test1Bean.show.get(9)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">k</span>
+                                Stephanie and Luke <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd11}" id="k"/> from Canada. <span class="error" style="display:#{test1Bean.show.get(10)};">fail</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Rewrite these sentences using the short form.</legend>
+                    <ul>
+                        <li><label for="a2"><span class="letter">a</span>
+                                She is funny. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd12}" id="a2"/> <span class="error" style="display:#{test1Bean.show.get(11)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">b</span>
+                                They are clever. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd13}" id="b2"/> <span class="error" style="display:#{test1Bean.show.get(12)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">c</span>
+                                We are cold. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd14}" id="c2"/> <span class="error" style="display:#{test1Bean.show.get(13)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">d</span>
+                                I am an astronaut. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd15}" id="d2"/> <span class="error" style="display:#{test1Bean.show.get(14)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">e</span>
+                                He is tall. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd16}" id="e2"/> <span class="error" style="display:#{test1Bean.show.get(15)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">f</span>
+                                You are friendly. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd17}" id="f2"/> <span class="error" style="display:#{test1Bean.show.get(16)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">g</span>
+                                They are kind. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd18}" id="g2"/> <span class="error" style="display:#{test1Bean.show.get(17)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">h</span>
+                                She is a good teacher. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd19}" id="h2"/> <span class="error" style="display:#{test1Bean.show.get(18)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">i</span>
+                                They are bad dogs. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd20}" id="i2"/> <span class="error" style="display:#{test1Bean.show.get(19)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">j</span>
+                                You are nice students. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd21}" id="j2"/> <span class="error" style="display:#{test1Bean.show.get(20)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">k</span>
+                                Sally is 15 years old. <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd22}" id="k2"/> <span class="error" style="display:#{test1Bean.show.get(21)};">fail</span> 
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Use the prompts to write a sentence. Use short forms.</legend>
+                    <ul>
+                        <li><label for="a3"><span class="letter">a</span>
+                                He / angry <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd23}" id="a3"/> <span class="error" style="display:#{test1Bean.show.get(22)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">b</span>
+                                They / happy <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd24}" id="b3"/> <span class="error" style="display:#{test1Bean.show.get(23)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">c</span>
+                                It / hot now <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd25}" id="c3"/> <span class="error" style="display:#{test1Bean.show.get(24)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">d</span>
+                                You / intelligent <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd26}" id="d3"/> <span class="error" style="display:#{test1Bean.show.get(25)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">e</span>
+                                We / unhappy today <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd27}" id="e3"/> <span class="error" style="display:#{test1Bean.show.get(26)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">f</span>
+                                I / a doctor <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd28}" id="f3"/> <span class="error" style="display:#{test1Bean.show.get(27)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">g</span>
+                                You / good students <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd29}" id="g3"/> <span class="error" style="display:#{test1Bean.show.get(28)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">h</span>
+                                She / from Mexico <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd30}" id="h3"/> <span class="error" style="display:#{test1Bean.show.get(29)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">i</span>
+                                My eyes /green <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd31}" id="i3"/> <span class="error" style="display:#{test1Bean.show.get(30)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">j</span>
+                                We / Australian <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd32}" id="j3"/> <span class="error" style="display:#{test1Bean.show.get(31)};">fail</span>
+                            </label>
+                        </li>
+                        <li><label><span class="letter">k</span>
+                                Michael / young <h:inputText class="form-control" style="display:inline;width: 10em;margin-left: 0.5em;margin-right: 0.5em;" a:required="true" value="#{test1Bean.answerd33}" id="k3"/> <span class="error" style="display:#{test1Bean.show.get(32)};">fail</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="space">
+                    <h:commandButton class="btn-info rounded-lg" value="Evaluate" action="#{test1Bean.evaluate()}"/>                 
+                    <h:commandButton class="btn-danger ml-3 rounded-lg" value="Reset" action="#{test1Bean.evaluate()}"/>
+                </div>                
+            </h:form>
+        </div>
+        
+        <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    </h:body>
+</html>

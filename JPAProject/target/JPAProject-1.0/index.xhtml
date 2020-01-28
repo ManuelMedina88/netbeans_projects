@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Enter Customer Data</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    </h:head>
+    <h:body>   
+        <h1>Que pasa</h1>
+        <h:form>
+            <h:outputText value="whathappend?"/>
+        </h:form>
+        <h:form id="customerForm" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{jpaDemoBean.updateDatabase()}" value="Save">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm2" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{oneToOneRelationshipDemoBean.updateDatabase()}" value="one to one">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm3" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{oneToManyRelationShipDemoBean.updateDatabase()}" value="one to many">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm4" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{manyToManyRelationshipDemoBean.updateDatabase()}" value="many to may">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm5" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{telephoneRegistrationBean.updateDatabase()}" value="registerTelephone">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm6" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{registerAddresses.updateDatabase()}" value="register addresses">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm26" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{criteriaUpdateDemoBean.updateData()}" value="Update row">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm27" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:commandButton actionListener="#{criteriaDeleteDemoBean.deleteData()}" value="Delete row">
+            </h:commandButton>                
+        </h:form>
+        
+        <h:form id="customerForm6_5" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            
+            <h:commandButton actionListener="#{criteriaApiDemoBean.findStates()}" value="Populate table1" style="display:inline" class="ml-2">
+                <f:ajax render="showTable5"></f:ajax>
+            </h:commandButton>                
+        </h:form>
+        
+        <h:dataTable id="showTable5" value="#{criteriaApiDemoBean.matchingStatesList}" var="state" styleClass = "table mt-5 text-center table-bordered">
+            <h:column>
+                <f:facet name = "header">State Id</f:facet>
+                <h:outputText value="#{state.usStateId}"/>
+            </h:column>
+            <h:column>
+                <f:facet name = "header">State's name</f:facet>    
+                <h:outputText value="#{state.usStateName}"/>
+            </h:column>
+            <h:column>
+                <f:facet name = "header">State's code</f:facet>    
+                <h:outputText value="#{state.usStateCD}"/>
+            </h:column>
+        </h:dataTable>
+        
+        
+        
+        <h:form id="customerForm7" a:autocomplete="off"> 
+            <h:messages></h:messages>
+            <h:outputLabel value="Parameter:" /><h:inputText id="param" value="#{selectQueryDemoBean.searchParameter}" class="ml-2"/>
+            <h:commandButton actionListener="#{selectQueryDemoBean.findStates()}" value="Populate table 2" style="display:inline" class="ml-2">
+                <f:ajax execute="param" render="showTable2"></f:ajax>
+            </h:commandButton>                
+        </h:form>
+        
+        <h:dataTable id="showTable2" value="#{selectQueryDemoBean.matchingStateList}" var="state" styleClass = "table mt-5 text-center table-bordered">
+            <h:column>
+                <f:facet name = "header">State Id</f:facet>
+                <h:outputText value="#{state.usStateId}"/>
+            </h:column>
+            <h:column>
+                <f:facet name = "header">State's name</f:facet>    
+                <h:outputText value="#{state.usStateName}"/>
+            </h:column>
+            <h:column>
+                <f:facet name = "header">State's code</f:facet>    
+                <h:outputText value="#{state.usStateCD}"/>
+            </h:column>
+        </h:dataTable>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </h:body>
+</html>
+

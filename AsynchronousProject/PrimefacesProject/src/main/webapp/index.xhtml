@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Prime faces Inputs</title>
+    </h:head>
+    <h:body>
+        <h1><h:outputText id="state" value="#{primefacesData.state}"/></h1>
+        <h:form>
+            <p:growl id="msgs" showDetail="true" />
+            <h:panelGrid columns="2" cellpadding="5">
+                <p:outputLabel value="Simple" for="acSimple"/>
+                <p:autoComplete id="acSimple" value="#{primefacesData.state}" completeMethod="#{primefacesData.listOfStatesA}"/>
+                
+                <p:outputLabel value="DropDown" for="dd"/>
+                <p:autoComplete id="dd" dropdown="true" value="#{primefacesData.stateA}" completeMethod="#{primefacesData.listOfName()}"/>
+                
+                <p:outputLabel value="Max Results(5):" for="acMaxResults" />
+                <p:autoComplete id="acMaxResults" maxResults="5" value="#{primefacesData.state}" completeMethod="#{primefacesData.listOfStatesA}" />
+                
+                
+                <p:autoComplete value="#{primefacesData.state}" completeMethod="#{primefacesData.listOfStatesA}" var="player" itemLabel="#{primefacesData.listOfName().get(20)}" itemValue="#{primefacesData}"  />
+                
+                <p:commandButton value="Update" update="state" />
+            </h:panelGrid>
+        </h:form>
+        
+        <h:form>
+            <p:commandButton actionListener="#{primefacesData.testConverter()}" value="Convert it"/>
+        </h:form>
+
+ <!-- <p:dataTable var="states" value="#{primefacesData.listOfStates}">
+            <p:column headerText="ID">
+                <h:outputText value="#{states.usStateId}"/>
+            </p:column>
+            
+            <p:column headerText="State Name">
+                <h:outputText value="#{states.usStateName}"/>
+            </p:column>
+            
+            <p:column headerText="State Code">
+                <h:outputText value="#{states.usStateCd}"/>
+            </p:column>
+        </p:dataTable>-->
+    </h:body>
+</html>
+

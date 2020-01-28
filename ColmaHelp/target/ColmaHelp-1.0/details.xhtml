@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>ColmaHelp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+
+    </h:head>
+    <h:body class="text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <h:link class="nav-link" value="warehouse" outcome="warehouse.xhtml"/>
+                    </li>
+                    <li class="nav-item active">
+                        <h:link class="nav-link" value="sells" outcome="sells.xhtml"/>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <h:outputText value="Bienvenido #{usernameCredentialBeans.username}"/>
+            </div>
+        </nav>
+
+        <div class="card border-dark mb-3  text-left" style="min-width:25rem; max-width:50%; margin-left: 25%; margin-top: 2em;">
+            <div class="card-header text-left bg-dark text-light">Product Details</div>
+            <div class="card-body text-dark">
+                <h5 class="card-title  text-left">Product</h5>
+                
+                <h:form class="form" a:autocomplete="off"  >
+                    <div>
+                        <label for="inputcodebar" class="ml-3 mr-2 col-form-label"><h:outputText value="Codebar: "/></label>
+                            <h:outputText value="#{productBeans.codebar_id}" id="inputcodebar"/>                       
+                    </div>
+                    <div>
+                        <label for="inputproductname" class="ml-3 mr-2 col-form-label"><h:outputText value="Product Name: "/></label>
+                        <h:outputText value="#{productBeans.product_name}" id="inputproductname"/>                        
+                    </div>
+                    <div>
+                        <label for="inputprice" class="ml-3 mr-2 col-form-label"><h:outputText value="Price: "/></label>                        
+                        <h:outputText value="#{productBeans.currencyFormat(productBeans.product_price)}" id="inputprice"/>                        
+                    </div>
+                    <div>
+                        <label for="inputquantity" class="ml-3 mr-2 col-form-label"><h:outputText value="Quantity: "/></label>                       
+                            <h:outputText value="#{productBeans.product_quantity}" id="inputquantity"/>
+                    </div>
+                    <div>
+                        <label for="inputdescription" class="ml-3 mr-2 col-form-label"><h:outputText value="Description: "/></label>
+                            <h:outputText value="#{productBeans.product_description}" id="inputdescription"/>                        
+                    </div>
+                    <div>
+                        <label for="inputprovider" class="ml-3 mr-2 col-form-label"><h:outputText value="Provider: "/></label>                        
+                            <h:outputText value="#{productBeans.product_provider}" id="inputprovider" />                        
+                    </div>
+                    <div>
+                        <label for="inputphone" class="ml-3 mr-2 col-form-label"><h:outputText value="Provider phone number: "/></label>
+                            <h:outputText value="#{productBeans.provider_phone_number}" id="inputphone" />
+                        
+                    </div> 
+                    <div class="mt-5">                        
+                        <h:commandLink action="#{productBeans.goBack()}" value="Back" class="ml-2 btn btn-success"/>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </h:body>
+</html>

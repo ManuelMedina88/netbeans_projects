@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Referencing a Managed bean</title>
+    </h:head>
+    <h:body>
+        <h1>Referencing a managed bean's properties</h1>
+        <h:outputText value='#{playersBean.playerName}'/><br/>
+        <h:outputText value='#{playersBean.playerSurname}'/><br/>
+        <h:outputText value='#{playersBean["playerName"]}'/><br/>
+        <h:outputText value="#{playersBean['playerSurname']}"/><br/>
+        <h:outputText value='#{playersBean.playerDetails.birthday}'/><br/>
+        <h:outputText value='#{playersBean.playerDetails.birthplace}'/><br/>
+        <h:outputText value="#{playersBean['playerDetails']['birthplace']}"/><br/>
+        <h:outputText value="#{playersBean['playerDetails']['birthday']}"/><br/>
+        <h:outputText value="#{playersBean['playerDetails']['birthplace']}"/><br/>
+        <h:outputText value="#{playersBean['playerDetails'].birthday}"/><br/>
+        <h:outputText value="#{playersBean.play}"/><br/>
+        
+    </h:body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Referencing Collections</title>
+    </h:head>
+    <h:body>
+        <h1>Referencing Collections</h1>
+
+        <p><strong>#{playersBean.titles_2013[0]}</strong></p>
+
+        <h2>Iterating through the array titles_2013</h2>
+        <h3> with fn:length</h3>
+        <ul>
+            <c:forEach begin ="0" 
+                       end="${fn:length(playersBean.titles_2013) - 1}" 
+                       var="i">
+                <li>#{playersBean.titles_2013[i]},</li>
+            </c:forEach>
+        </ul>
+        <h3> with items</h3>
+        <ul>
+            <c:forEach var="title" 
+                       items="#{playersBean.titles_2013}">
+                <li>#{title},</li>
+            </c:forEach>
+        </ul>
+
+        <h3>ui:repeat</h3>
+        <ul>
+            <ui:repeat var="title" value="#{playersBean.titles_2013}">
+                <li>
+                    <i>#{title}</i>,
+                </li>
+            </ui:repeat>
+        </ul>
+        <p style="display:none">#{playersBean.titles_2013[0] = "Sao Paulo 2013"}</p>
+        <ul>
+            <ui:repeat var="title" value="#{playersBean.titles_2013}">
+                <li>
+                    <i>#{title}</i>,
+                </li>
+            </ui:repeat>
+        </ul>
+        
+        <c:forEach var="title" 
+                   items="#{playersBean.titles_2013}" 
+                   varStatus="v">
+            <i>#{title}</i>
+            #{v.last ? '':', '}
+        </c:forEach>
+        <h3>Accessing key, value data structure</h3>
+        <p>#{playersBean.matchfacts.Aces}</p>
+        <p>#{playersBean.matchfacts['Double Faults']}</p>
+    </h:body>
+</html>

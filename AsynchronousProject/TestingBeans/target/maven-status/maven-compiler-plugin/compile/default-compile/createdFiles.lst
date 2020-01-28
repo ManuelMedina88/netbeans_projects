@@ -1,0 +1,5 @@
+com/itdepartment/newtech/testingbeans/resources/JavaEE8Resource.class
+com/itdepartment/newtech/testingbeans/service/IStatefulBean.class
+com/itdepartment/newtech/testingbeans/beans/TestStatefulBean.class
+com/itdepartment/newtech/testingbeans/JAXRSConfiguration.class
+com/itdepartment/newtech/testingbeans/service/StatefulBean.class

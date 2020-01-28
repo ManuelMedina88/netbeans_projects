@@ -1,0 +1,6 @@
+com/itdepartment/newtech/ejbproject3/Dao/CustomerDao.class
+com/itdepartment/newtech/ejbproject3/beans/CustomerController.class
+com/itdepartment/newtech/ejbproject3/Dao/CustomerDaoBean.class
+com/itdepartment/newtech/ejbproject3/resources/JavaEE8Resource.class
+com/itdepartment/newtech/ejbproject3/JAXRSConfiguration.class
+com/itdepartment/newtech/ejbproject3/Entity/Customers.class

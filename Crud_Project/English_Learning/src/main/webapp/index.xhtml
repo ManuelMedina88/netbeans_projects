@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>English Learning</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    </h:head>
+    <h:body class="text-center">
+        <div style="width:25%;margin-left: 37.5%; margin-top: 5em;background-color:rgb(255, 255, 255);border-radius: 10px;padding:30px; " alt="Helloo">
+        <h:form class="form-signin" a:autocomplete="off">
+            <h:graphicImage alt="logo" value="/resources/images/english_portal.jpeg"/>
+            <h3 class="h3 mb-3 font-weight-normal">Please sign in</h3>
+            <div>
+                <h:outputLabel value="Username: " for="username" class="sr-only mb-3"/>
+                <h:inputText value="#{userVerification.userName}" class="form-control" required="true" id="username" a:placeholder="Username"/>
+            </div>
+            <br/>
+            <div>
+                <h:outputLabel value="Password: "  for="password" class="sr-only"/>
+                <h:inputSecret value="#{userVerification.password}" class="form-control" required="true" id="password" a:placeholder="Password"/>
+            </div>
+            <br/>
+            <div>
+                <h:commandButton value="Login" action="#{userVerification.processAuthentication()}" class="btn btn-lg btn-danger btn-block"/>
+            </div>
+        </h:form>
+        
+        <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    </h:body>
+</html>
+
